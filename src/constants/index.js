@@ -1,22 +1,18 @@
 import {
     mobile,
     backend,
-    creator,
     web,
     javascript,
     html,
     css,
     reactjs,
-    redux,
+    ecommerce,
     tailwind,
-    nodejs,
     git,
-    meta,
-    shopify,
-    carrent,
-    jobit,
-    tripguide,
+    intership,
+
     threejs,
+    inprogress,
   } from "../assets";
   
   export const navLinks = [
@@ -29,9 +25,13 @@ import {
       title: "Work",
     },
     {
+      id: "projects",
+      title: "Projects",
+    },
+    {
       id: "contact",
       title: "Contact",
-    },
+    }
   ];
   
   const services = [
@@ -44,13 +44,10 @@ import {
       icon: mobile,
     },
     {
-      title: "Backend Developer",
+      title: "Backend Developer in progres..",
       icon: backend,
     },
-    {
-      title: "Content Creator",
-      icon: creator,
-    },
+
   ];
   
   const technologies = [
@@ -70,22 +67,10 @@ import {
       name: "React JS",
       icon: reactjs,
     },
-/*     {
-      name: "Redux Toolkit",
-      icon: redux,
-    }, */
     {
       name: "Tailwind CSS",
       icon: tailwind,
     },
-/*     {
-      name: "Node JS",
-      icon: nodejs,
-    }, */
-/*     {
-      name: "MongoDB",
-      icon: mongodb,
-    }, */
     {
       name: "Three JS",
       icon: threejs,
@@ -98,18 +83,41 @@ import {
   
   const experiences = [
     {
+      title: "First app created",
+      company_name: "My Highschool",
+      icon: intership,
+      iconBg: "#E6DEDD",
+      date: "Agu 2013 - Dec 2013",
+      points: [
+        "Create a CRUD program for students registrations",
+        "Developing by my own, using Visual Basic code processor, C++, SQL",
+        "Back in my Highschool formation",
+        "This was 'my internship work' for my technical title.",
+      ],
+    },
+    {
       title: "Front-end developer",
       company_name: "Trashumar ediciones",
       icon: reactjs,
       iconBg: "#383E56",
       date: "May 2023 - Actualy",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+        "Developing and maintaining web application using React.js and other related technologies.",
         "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
       ],
     },
+    {
+    title: "Front end react js",
+    company_name: "Coderhouse",
+    icon: reactjs,
+    iconBg: "#383E56",
+    date: "Jan 2022 - Jan 2023",
+    points: [
+      "At this point I had already been studying on my own for 6 months",
+      "This was my first 'carreer' named front-end react developer ",
+      "Consist in 3 bootscamps, Web Developer, Javascript and React js",
+    ],
+  },
     {
       title: "Front-end developer",
       company_name: "La Casa de los vientos",
@@ -118,63 +126,9 @@ import {
       date: "Oct 2023 - Actualy",
       points: [
         "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+        "Collaborating with a partner who develops backend",
         "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
       ],
-    },
-    {
-      title: "Front end react js",
-      company_name: "Coderhouse",
-      icon: shopify,
-      iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-  ];
-  
-  const testimonials = [
-    {
-      testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
-    },
-    {
-      testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
-    },
-    {
-      testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
-      designation: "CTO",
-      company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
     },
   ];
   
@@ -197,13 +151,13 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
+      image: ecommerce,
       source_code_link: "https://github.com/PatricioResio/ProyectoFinalReactResio",
     },
     {
       name: "Trashumar Ediciones",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "Web application for a editorial that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
       tags: [
         {
           name: "react",
@@ -218,7 +172,7 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
+      image: inprogress,
       source_code_link: "https://github.com/",
     },
     {
@@ -231,17 +185,17 @@ import {
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "Material UI",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "React TS",
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
+      image: inprogress,
       source_code_link: "https://github.com/",
     },
   ];
   
-  export { services, technologies, experiences, testimonials, projects };
+  export { services, technologies, experiences, projects };

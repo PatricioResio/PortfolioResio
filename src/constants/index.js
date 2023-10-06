@@ -178,7 +178,7 @@ import {
     {
       name: "La casa de los vientos",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "A comprehensive single page app, for a inn, who works with many nations travelers, that enables users to see the place, take reservs, do pays and contact with owners  .",
       tags: [
         {
           name: "nextjs",

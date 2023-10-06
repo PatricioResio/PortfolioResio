@@ -173,7 +173,7 @@ import {
         },
       ],
       image: inprogress,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/PatricioResio",
     },
     {
       name: "La casa de los vientos",
@@ -194,7 +194,7 @@ import {
         },
       ],
       image: inprogress,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/PatricioResio",
     },
   ];
   

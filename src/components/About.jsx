@@ -43,7 +43,7 @@ const About = () => {
       <motion.p
         variants={fadeIn("", "", 0.1, 1)} 
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]' 
-      >acá va a ir la descripción de mi perfil
+      >Hi i develop front end webs, specialized in react, i'm studing backend right now, and as a hobby i'm studing Unity and C#
 
       </motion.p>
       <div className='mt-20 flex flex-wrap gap-10'>

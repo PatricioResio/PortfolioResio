@@ -6,12 +6,13 @@ import {
   html,
   css,
   reactjs,
-  ecommerce,
   tailwind,
   git,
+  trashumar,
   intership,
   threejs,
   inprogress,
+  cienciaCerca,
 } from "../assets";
 
 export const navLinks = [
@@ -94,17 +95,6 @@ const experiences = [
     ],
   },
   {
-    title: "Front-end developer",
-    company_name: "Trashumar ediciones",
-    icon: reactjs,
-    iconBg: "#383E56",
-    date: "May 2023 - Actualy",
-    points: [
-      "Developing and maintaining web application using React.js and other related technologies.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-    ],
-  },
-  {
     title: "Front end react js",
     company_name: "Coderhouse",
     icon: reactjs,
@@ -118,10 +108,33 @@ const experiences = [
   },
   {
     title: "Front-end developer",
+    company_name: "Trashumar ediciones",
+    icon: reactjs,
+    iconBg: "#383E56",
+    date: "May 2023 - Actualy",
+    points: [
+      "Developing and maintaining web application using React.js and other related technologies.",
+      "Implementing responsive design and ensuring cross-browser compatibility.",
+    ],
+  },
+  {
+    title: "Front-end developer",
+    company_name: "Adopta un junior",
+    icon: reactjs,
+    iconBg: "#383E56",
+    date: "May 2024 - Jun 2024",
+    points: [
+      "Developing web application using React.js, Vite and Tailwind css.",
+      "Implementing responsive design for a real client who's own a mark call Ciencia Cierta.",
+      "Remote working in a 5 person team.",
+    ],
+  },
+  {
+    title: "Front-end developer",
     company_name: "La Casa de los vientos",
     icon: reactjs,
     iconBg: "#E6DEDD",
-    date: "Oct 2023 - Actualy",
+    date: "Jan 2026 - Actualy",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with a partner who develops backend",
@@ -132,9 +145,9 @@ const experiences = [
 
 const projects = [
   {
-    name: "Final project Ecommerce",
+    name: "Ciencia Cerca",
     description:
-      "Web-based platform that allows users to search, select and buy products",
+      "Website think about cience divulgation, CienciaCerca is a brand from Spain, his owner post news and papers. I colaborate working on navbar, buttons, cards based on his brand stetic",
     tags: [
       {
         name: "react",
@@ -149,9 +162,9 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: ecommerce,
+    image: cienciaCerca,
     source_code_link:
-      "https://github.com/PatricioResio/ProyectoFinalReactResio",
+      "https://www.youtube.com/watch?v=-ROs9nPT3Dk&t=2338s",
   },
   {
     name: "Trashumar Ediciones",
@@ -171,7 +184,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: inprogress,
+    image: trashumar,
     source_code_link: "https://github.com/PatricioResio/TrashumarEdiciones",
   },
   {

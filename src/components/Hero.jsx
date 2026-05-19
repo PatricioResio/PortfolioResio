@@ -14,8 +14,8 @@ const Hero = () => {
           <div className='w-1 sm:h-80 h-40 violet-gradient'/>
         </div>
         
-        <div>
-          <h1 className={`${styles.heroHeadText} text-white`}> Hi. i'm 
+        <div> 
+          <h1 className={`${styles.heroHeadText} text-white`}> Hi i'm 
             <span className='text-[#915eff]'> Patricio</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
@@ -32,7 +32,7 @@ const Hero = () => {
           <div className='w-[35px] h-[64px] rounded-3xl 
           border-4 border-secondary flex justify-center items-start 
           p-2'>
-            <motion.dev
+            <motion.div
               animate={{
                 y: [0,24, 0]
               }}

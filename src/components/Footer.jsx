@@ -9,10 +9,10 @@ const Footer = () => {
         <div className="text-center md:text-left">
           <div className="flex flex-row items-center mx-auto">
 
-        <img src={logo} alt={logo} className="w-14 h-14 object-contain " />
-          <h2 className="text-white text-2xl font-bold">
-            Patricio Resio
-          </h2>
+                <img src={logo} alt={logo} className="w-14 h-14 object-contain " />
+                <h2 className="text-white text-2xl font-bold">
+                 Patricio Resio
+                </h2>
           </div>
 
           <p className="text-gray-400 mt-2 max-w-md">

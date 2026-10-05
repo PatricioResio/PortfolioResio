@@ -1,8 +1,21 @@
+import { lazy, Suspense, useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { styles } from '../styles';
-import { ComputersCanvas } from './canvas';
+const ComputersCanvas = lazy(() => import('./canvas/Computers'));
 
 const Hero = () => {
+  // Monta el canvas cuando el navegador está libre: texto y fondo pintan primero
+  const [showCanvas, setShowCanvas] = useState(false);
+  useEffect(() => {
+    const start = () => setShowCanvas(true);
+    if ('requestIdleCallback' in window) {
+      const id = requestIdleCallback(start, { timeout: 800 });
+      return () => cancelIdleCallback(id);
+    }
+    const t = setTimeout(start, 200);
+    return () => clearTimeout(t);
+  }, []);
+
   return (
     <section className='relative w-full h-screen mx-auto'>
       
@@ -21,7 +34,11 @@ const Hero = () => {
           </p>
         </div>
       </div>
-      <ComputersCanvas/>
+      {showCanvas && (
+        <Suspense fallback={null}>
+          <ComputersCanvas />
+        </Suspense>
+      )}
       <div className='absolute xs:bottom-20 bottom-20 w-full flex 
       justify-center items-center'>
         <a href="#about">

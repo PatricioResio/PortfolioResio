@@ -1,3 +1,4 @@
+import { lazy, Suspense } from 'react';
 import {BrowserRouter } from 'react-router-dom';
 import {
   About, 
@@ -6,9 +7,9 @@ import {
   Hero, 
   Navbar, 
   Tech, 
-  Works, 
-  StarsCanvas} from './components'
+  Works } from './components'
 import Footer from './components/Footer';
+const StarsCanvas = lazy(() => import('./components/canvas/Stars'));
 const App = () => {
 
   return (
@@ -24,7 +25,7 @@ const App = () => {
         <Works/>
          <div className='relative z-0'>
           <Contact/>
-          <StarsCanvas/>
+          <Suspense fallback={null}><StarsCanvas/></Suspense>
           </div>
         <Footer/>
       </div>

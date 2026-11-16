@@ -1,36 +1,42 @@
 import { lazy, Suspense } from 'react';
-import {BrowserRouter } from 'react-router-dom';
-import {
-  About, 
-  Contact,
-  Experience, 
-  Hero, 
-  Navbar, 
-  Tech, 
-  Works } from './components'
+import { Contact, Education, Experience, Hero, Navbar, Tech, Works } from './components';
 import Footer from './components/Footer';
+import { useIsMobile } from './hooks/useMediaQuery';
+import { LanguageProvider } from './i18n/LanguageContext';
+
 const StarsCanvas = lazy(() => import('./components/canvas/Stars'));
-const App = () => {
+
+const Page = () => {
+  const isMobile = useIsMobile();
 
   return (
-    <BrowserRouter>
-      <div className='relative z-0 bg-primary'>
-        <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
-          <Navbar/>
-          <Hero/>
-        </div>
-        <About/>
-        <Experience/>
-        <Tech/>
-        <Works/>
-         <div className='relative z-0'>
-          <Contact/>
-          <Suspense fallback={null}><StarsCanvas/></Suspense>
-          </div>
-        <Footer/>
+    <div className='relative z-0 bg-primary'>
+      <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
+        <Navbar />
+        <Hero />
       </div>
-    </BrowserRouter>
-  )
-}
+      <Experience />
+      <Works />
+      <Tech />
+      <Education />
+      <div className='relative z-0'>
+        <Contact />
+        {/* El campo de estrellas (5000 puntos WebGL) solo en desktop */}
+        {!isMobile && (
+          <Suspense fallback={null}>
+            <StarsCanvas />
+          </Suspense>
+        )}
+      </div>
+      <Footer />
+    </div>
+  );
+};
 
-export default App
+const App = () => (
+  <LanguageProvider>
+    <Page />
+  </LanguageProvider>
+);
+
+export default App;
